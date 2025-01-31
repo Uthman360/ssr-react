@@ -1,4 +1,5 @@
-import ReactDom from "react-dom/client";
+import React from "react";
+import { hydrateRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
-ReactDom.hydrateRoot(document.getElementById("root"), <App />);
+hydrateRoot(document.getElementById("root"), <App />);

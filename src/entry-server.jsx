@@ -1,5 +1,6 @@
 import { renderToString } from "react-dom/server";
 import App from "./App";
 export function render() {
-  return renderToString(<App />);
+  const html = renderToString(<App />);
+  return html;
 }
